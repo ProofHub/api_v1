@@ -150,4 +150,6 @@ Archive a project
 Delete project
 ----------------
 
+* `DELETE /projects/123456.json` will delete the project.
+
 `204 No Content` will be returned if the record is deleted. `403 Forbidden` will be returned in case of invalid access.
