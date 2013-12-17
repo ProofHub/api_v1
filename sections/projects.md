@@ -7,6 +7,8 @@ Projects
 * [Update project](#update-project)
 * [Archive/Activate project](#archiveactivate-project)
 * [Delete project](#delete-project)
+* [Get people assigned to project](#get-people-assigned-to-project)
+* [Assign people to project](#assign-people-to-project)
 
 Get all projects
 ----------------
@@ -117,7 +119,7 @@ Create project
 
 `201 Created` will be returned along with the JSON of the project ([Get project](#get-project)) if the record is added. `You have reached the project limit` will be returned if the account has reached the project limit. `403 Forbidden` will be returned in case of invalid access.
 
-* To assign people to the project - ([Assign](https://github.com/SDPLabs/proofhub-api/blob/master/sections/assign.md#assign-people-to-a-project))
+* To assign people to the project - [Assign people to project](#assign-people-to-project)
 
 Update project
 ----------------
@@ -150,6 +152,43 @@ Archive a project
 Delete project
 ----------------
 
-* `DELETE /projects/123456.json` will delete the project.
+* `DELETE /projects/23423233.json` will delete the project.
 
 `204 No Content` will be returned if the record is deleted. `403 Forbidden` will be returned in case of invalid access.
+
+
+Get people assigned to project
+----------------
+
+* `GET /projects/23423233/assigned.json` will return all the people assigned to the project.
+
+```json
+[
+	{
+		"id":4634893,
+		"name":"Chris Wagley",
+		"email":"chris@email.com",
+		"updated_at":null,
+		"url":"https://api.proofhub.com/v1/people/5895623.json"
+	},
+	{
+		"id":5895623,
+		"name":"Stella Altois",
+		"email":"stella@email.com",
+		"updated_at":null,
+		"url":"https://api.proofhub.com/v1/people/5895623.json"
+	}
+]
+```
+
+Assign people to project
+----------------
+
+* `POST /projects/23423233/assigned.json` will grant access to the project for the ids of people already on the account or new people via email_addresses. 
+
+```json
+{
+	"ids":[5322423, 6233232, 1056436],
+	"emails":["michael@email.com", "jade@email.com"]
+}
+```
