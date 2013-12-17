@@ -184,7 +184,7 @@ Get people assigned to project
 Assign people to project
 ----------------
 
-* `POST /projects/23423233/assigned.json` will grant access to the project for the ids of people already on the account or new people via email_addresses. 
+* `POST /projects/23423233/assigned.json` to assign the existing people with their ids or to new people via their email address. 
 
 ```json
 {
