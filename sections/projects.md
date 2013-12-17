@@ -117,7 +117,7 @@ Create project
 
 `201 Created` will be returned along with the JSON of the project ([Get project](#get-project)) if the record is added. `You have reached the project limit` will be returned if the account has reached the project limit. `403 Forbidden` will be returned in case of invalid access.
 
-* To assign people to the project - ([Assign](#assign))
+* To assign people to the project - ([Assign](https://github.com/SDPLabs/proofhub-api/blob/master/sections/assign.md#assign-people-to-a-project))
 
 Update project
 ----------------
