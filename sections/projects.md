@@ -77,28 +77,28 @@ Get project
 	},
 	"files":{
 		"count":12,
-		"updated_at":"2013-11-19 06:26:04",
+		"updated_at":"2013-11-19T06:26:04+00:00",
 		"url":"https://api.proofhub.com/v1/projects/23423233/files.json"
 	},
 	"topics":{
 		"count":8,
-		"updated_at":"2013-12-07 06:34:47",
+		"updated_at":"2013-12-07T06:34:47+00:00",
 		"url":"https://api.proofhub.com/v1/projects/23423233/topics.json"
 	},
 	"task_lists":{
 		"count":2,
-		"updated_at":"2013-11-08 09:59:26",
+		"updated_at":"2013-11-08T09:59:26+00:00",
 		"url":"https://api.proofhub.com/v1/projects/23423233/lists.json"
 	},
 	"milestones":{
 		"completed":1,
 		"incomplete":3,
-		"updated_at":"2013-11-28 10:21:02",
+		"updated_at":"2013-11-28T10:21:02+00:00",
 		"url":"https://api.proofhub.com/v1/projects/23423233/milestones.json"
 	},
 	"notes":{
 		"count":3,
-		"updated_at":"2013-11-08 09:54:22",
+		"updated_at":"2013-11-08T09:54:22+00:00",
 		"url":"https://api.proofhub.com/v1/projects/23423233/timesheet.json"
 	}
 }
@@ -112,10 +112,13 @@ Create project
 {
 	"title":"To the moon",
 	"description":"DBX's campaign",
+	"category":"147852",
 	"start_date":"2013-12-10",
 	"end_date":"2013-12-15"
 }
 ```
+
+You can get the category from the [categories API](https://github.com/sdplabs/proofhub-api/blob/master/sections/categories.md).
 
 `201 Created` will be returned along with the JSON of the project ([Get project](#get-project)) if the record is added. `You have reached the project limit` will be returned if the account has reached the project limit. `403 Forbidden` will be returned in case of invalid access.
 
@@ -130,6 +133,7 @@ Update project
 {
 	"title":"To the moon 2014",
 	"description":"DBX's campaign",
+	"category":"147852",
 	"start_date":"2013-12-10",
 	"end_date":"2013-12-15"
 }
@@ -139,11 +143,11 @@ Update project
 Archive a project
 ------------------
 
-* `PUT /projects/23423233.json` with the following JSON to archive a project. You can pass `"no"` to activate the project.
+* `PUT /projects/23423233.json` with the following JSON to archive a project. You can pass `false` to activate the project.
 
 ```json
 {
-  	"archived": "yes"
+  	"archived": true
 }
 ```
 
@@ -192,3 +196,4 @@ Assign people to project
 	"emails":["michael@email.com", "jade@email.com"]
 }
 ```
+You can get the ids of existing people on the account from the [people API](https://github.com/sdplabs/proofhub-api/blob/master/sections/people.md#get-people).
