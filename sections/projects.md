@@ -73,7 +73,7 @@ Get project
 	},
 	"assigned":{
 		"value":"4634893,5895623"
-		"url":"https://api.proofhub.com/v1/projects/assigned?id=23423233"
+		"url":"https://api.proofhub.com/v1/projects/23423233/assigned.json"
 	},
 	"files":{
 		"count":12,
