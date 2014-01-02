@@ -1,4 +1,4 @@
-Milestones
+Todolists
 ====================
 
 * [Get all todolists](#get-all-todolists)
@@ -107,6 +107,6 @@ Update todolist
 Delete todolist
 ----------------
 
-* `DELETE /projects/23423233/milestones/789456.json` will delete the todolist.
+* `DELETE /projects/23423233/todolist/789456.json` will delete the todolist.
 
 `204 No Content` will be returned if the record is deleted. `403 Forbidden` will be returned in case of invalid access.
