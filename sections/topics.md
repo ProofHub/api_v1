@@ -84,7 +84,8 @@ Get topic
 Create topic
 ----------------
 
-* `POST /projects/23423233/topics.json` will create a new topic from the parameters passed. The subscribers array is an optional list of people IDs that you want to notify about this topic (see [People API](https://github.com/sdplabs/proofhub-api/blob/master/sections/people.md#get-people) on how to get the people IDs for a given project).
+* `POST /projects/23423233/topics.json` will create a new topic from the parameters passed. 
+* The subscribers array is an optional list of people IDs that you can get the category from the [people API](https://github.com/sdplabs/proofhub-api/blob/master/sections/people.md). 
 
 ```json
 {
@@ -98,7 +99,7 @@ Create topic
 }
 ```
 
-The subscribers array is an optional list of people IDs that you can get the category from the [people API](https://github.com/sdplabs/proofhub-api/blob/master/sections/people.md). `201 Created` will be returned along with the JSON of the topic ([Get topic](#get-topic)) if the record is added. `403 Forbidden` will be returned in case of invalid access.
+`201 Created` will be returned along with the JSON of the topic ([Get topic](#get-topic)) if the record is added. `403 Forbidden` will be returned in case of invalid access.
 
 **Attaching files**
 
