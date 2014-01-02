@@ -1,7 +1,7 @@
 Topics
 ====================
 
-* [Get all topics](#get-all-topics)
+* [Get topics](#get-topics)
 * [Get topic](#get-topic)
 * [Create topic](#create-topic)
 * [Update topic](#update-topic)
@@ -85,17 +85,14 @@ Create topic
 ----------------
 
 * `POST /projects/23423233/topics.json` will create a new topic from the parameters passed. 
-* The subscribers array is an optional list of people IDs that you can get the category from the [people API](https://github.com/sdplabs/proofhub-api/blob/master/sections/people.md). 
+* The subscribers array is an optional list of people IDs that you can get from the [people API](https://github.com/sdplabs/proofhub-api/blob/master/sections/people.md). 
 
 ```json
 {
 	"title":"New topic for discussion",
 	"description":"Topic content...",
 	"private":true,
-	"subscribers":[
-		107754873,
-		107754873
-	]
+	"subscribers":[4634893, 5895623]
 }
 ```
 
@@ -121,17 +118,14 @@ https://github.com/sdplabs/proofhub-api/blob/master/sections/attachemnts.md#crea
 		"name":"graphs.png"
 		}
 	],
-	"subscribers":[
-		107754873,
-		107754873
-	]
+	"subscribers":[4634893, 5895623]
 }
 ```
 
 Update topic
 ----------------
 
-* `PUT /projects/23423233/topics/789456.json` will  update the topic from the parameters passed.
+* `PUT /projects/23423233/topics/789456.json` will update the topic from the parameters passed.
 
 ```json
 {
@@ -139,13 +133,13 @@ Update topic
 	"description":"Topic content...",
 	"private":true,
 }
-
 ```
+
 `200 OK` will be returned along with the JSON of the topic ([Get topic](#get-topic)) if the record is updated. `403 Forbidden` will be returned in case of invalid access.
 
 Delete topic
 ----------------
 
-* `DELETE /projects/23423233/topics/789456.json` will delete the project.
+* `DELETE /projects/23423233/topics/789456.json` will delete the topic.
 
 `204 No Content` will be returned if the record is deleted. `403 Forbidden` will be returned in case of invalid access.
