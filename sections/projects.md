@@ -15,6 +15,7 @@ Get all projects
 
 * `GET /projects.json` will return all the active projects.
 * `GET /projects/archived.json` will return all the archived projects.
+* `GET /people/4634893/projects.json` - will return projects for a specified user.
 
 ```json
 [
