@@ -1,16 +1,18 @@
 Milestones
 ====================
 
-* [Get milestones](#get-milestones)
+* [Get all milestones](#get-all-milestones)
 * [Get milestone](#get-milestone)
 * [Create milestone](#create-milestone)
 * [Update milestone](#update-milestone)
 * [Delete milestone](#delete-milestone)
 
-Get milestones
+Get all milestones
 ----------------
 
 * `GET /projects/23423233/milestones.json` will return milestones for this project.
+* `GET /people/4634893/milestones.json` will return milestones assigned to a specified user.
+
 
 ```json
 [
