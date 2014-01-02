@@ -1,15 +1,15 @@
 Comments
 ====================
 
-* [Get topic comments](#get-topic- comments)
+* [Get comments](#get-comments)
 * [Create comment](#create-comment)
 * [Update comment](#update-comment)
 * [Delete comment](#delete-comment)
 
-Get topic comments
+Get comments
 ----------------
 
-* `GET /projects/23423233/topics/123456/comments.json` will return comments for the specified topic.
+* `GET /projects/23423233/topics/123456/comments.json` will return comments for the specified topic. 
 
 ```json
 [
@@ -64,6 +64,32 @@ Get topic comments
 	}
 ]
 ```
+To see all comments for a task, you just GET that task using [Task API](https://github.com/sdplabs/proofhub-api/blob/master/sections/tasks.md#get-task) and they're included and look like this:
+
+```json
+[
+	{
+		"id":13995058,
+		"content":"Meeting with the client",
+		"created_at":"2013-10-30 11:17:58",
+		"creator":{
+			"id":4634893,
+			"name":"Chris Wagley",
+			"image_url":null
+		},
+	},
+	{
+		"id":14008626,
+		"content":"Meeting postponed",
+		"created_at":"2013-10-30 11:30:18",
+		"creator":{
+			"id":4634893,
+			"name":"Chris Wagley",
+			"image_url":null
+		},
+	}
+]
+```
 
 Create comment
 ----------------
@@ -76,7 +102,7 @@ Create comment
 }
 ```
 
-`201 Created` will be returned along with the JSON of the topic ([Get topic](#get-topic)) if the record is added. `403 Forbidden` will be returned in case of invalid access.
+`201 Created` will be returned along with the JSON of the comment if the record is added. `403 Forbidden` will be returned in case of invalid access.
 
 **Attaching files**
 
@@ -107,7 +133,7 @@ Update comment
 }
 ```
 
-`200 OK` will be returned along with the JSON of the topic ([Get topic](#get-topic)) if the record is updated. `403 Forbidden` will be returned in case of invalid access.
+`200 OK` will be returned along with the JSON of the comment if the record is updated. `403 Forbidden` will be returned in case of invalid access.
 
 Delete comment
 ----------------
