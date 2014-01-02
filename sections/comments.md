@@ -71,7 +71,7 @@ To see all comments for a task, you just GET that task using [Task API](https://
 	{
 		"id":13995058,
 		"content":"Meeting with the client",
-		"created_at":"2013-10-30 11:17:58",
+		"created_at":"2013-12-31T11:05:22+00:00",
 		"creator":{
 			"id":4634893,
 			"name":"Chris Wagley",
@@ -81,7 +81,7 @@ To see all comments for a task, you just GET that task using [Task API](https://
 	{
 		"id":14008626,
 		"content":"Meeting postponed",
-		"created_at":"2013-10-30 11:30:18",
+		"created_at":"2013-12-31T11:30:22+00:00",
 		"creator":{
 			"id":4634893,
 			"name":"Chris Wagley",
