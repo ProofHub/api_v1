@@ -1,16 +1,17 @@
 Tasks
 ====================
 
-* [Get tasks](#get-tasks)
+* [Get all tasks](#get-all-tasks)
 * [Get task](#get-task)
 * [Create task](#create-task)
 * [Update task](#update-task)
 * [Delete task](#delete-task)
 
-Get tasks
+Get all tasks
 ----------------
 
 * `GET /projects/23423233/todolists/748596/tasks.json` will return task for this todolist.
+* `GET /people/4634893/tasks.json` will return task assigned to a specified user.
 
 ```json
 [
