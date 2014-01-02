@@ -19,10 +19,10 @@ Get tasks
 		"description":"Update the template document for the training material.",
 		"due_date":null,
 		"completed":true,
-		"position":"3",
+		"position":3,
 		"updated_at":"2013-12-28T10:50:47+00:00",
 		"created_at":"2013-12-28T10:50:47+00:00",
-		"comments":"0",
+		"comments":0,
 		"url":"https://api.proofhub.com/v1/project/23423233/todolists/748596/tasks/784512.json"
 	},
 	{
@@ -30,10 +30,10 @@ Get tasks
 		"description":"Get the completed document reviewed and approved by each and every person responsible.",
 		"due_date":null,
 		"completed":true,
-		"position":"1",
+		"position":1,
 		"updated_at":"2013-12-25T11:05:22+00:00",
 		"created_at":"2013-12-25T10:55:35+00:00",
-		"comments":"1",
+		"comments":1,
 		"url":"https://api.proofhub.com/v1/project/23423233/todolists/748596/tasks/124556.json"
 	}
 ]
@@ -46,10 +46,10 @@ Get task
 
 ```json
 {
-	"id":5,
+	"id":124556,
 	"description":"Get the completed document reviewed and approved by each and every person responsible.",
 	"due_date":"null",
-	"position":"1",
+	"position":1,
 	"completed":true,
 	"updated_at":"2013-12-25T11:05:22+00:00",
 	"created_at":"2013-12-25T10:55:35+00:00",
@@ -68,7 +68,7 @@ Get task
 		{
 	        "id":13995058,
 	        "content":"Meeting with the client",
-	        "created_at":"2013-10-30 11:17:58",
+	        "created_at":"2013-12-31T11:05:22+00:00",
 	        "creator":{
 	            "id":4634893,
 	            "name":"Chris Wagley",
@@ -78,7 +78,7 @@ Get task
 	    {
 	        "id":14008626,
 	        "content":"Meeting postponed",
-	        "created_at":"2013-10-30 11:30:18",
+	        "created_at":"2013-12-31T11:30:22+00:00",
 	        "creator":{
 	            "id":4634893,
 	            "name":"Chris Wagley",
@@ -97,7 +97,7 @@ Create task
 
 ```json
 {
-	"description":"Api task added to the list",
+	"description":"Get it signed",
 	"start_date":"2013-12-25",
 	"due_date":"2013-12-30",
 	"assigned":[4634893, 5895623]
@@ -113,7 +113,7 @@ https://github.com/sdplabs/proofhub-api/blob/master/sections/attachemnts.md#crea
 
 ```json
 {
-	"description":"Get it signed off",
+	"description":"Get it signed",
 	"start_date":"2013-12-31",
 	"due_date":"2013-12-31",
 	"attachments":[
