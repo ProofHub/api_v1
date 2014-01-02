@@ -51,7 +51,7 @@ Get topic
 	"updated_at":"2013-11-07T13:08:04+00:00",
 	"created_at":"2013-11-07T13:08:04+00:00",
 	"comments":{
-		"count":"2",
+		"count":2,
 		"url":"https://api.proofhub.com/v1/project/23423233/topics/789456/comments.json"
 	},
 	"creator":{
