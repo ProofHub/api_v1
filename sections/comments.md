@@ -124,7 +124,7 @@ https://github.com/sdplabs/proofhub-api/blob/master/sections/attachemnts.md#crea
 Update comment
 ----------------
 
-* `PUT /projects/43981916/<section>/123456/comments/895623.json` will update the comment from the parameters passed for the commentable described via / -- for example /projects/43981916/topics/123456/comments/895623.json or /projects/43981916/tasks/123456/comments/895623.json. 
+* `PUT /projects/23423233/<section>/123456/comments/895623.json` will update the comment from the parameters passed for the section specified. 
 
 
 ```json
@@ -138,6 +138,6 @@ Update comment
 Delete comment
 ----------------
 
-* `DELETE /projects/43981916/<section>/123456/comments/895623.json` will delete the comment.
+* `DELETE /projects/23423233/<section>/123456/comments/895623.json` will delete the comment for the section specified. 
 
 `204 No Content` will be returned if the record is deleted. `403 Forbidden` will be returned in case of invalid access.
