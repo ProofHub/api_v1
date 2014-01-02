@@ -52,7 +52,7 @@ Get all projects
 Get project
 ----------------
 
-* `GET /projects.json` will return all active projects.
+* `GET /projects.json` will return project specified.
 
 ```json
 {
@@ -127,7 +127,7 @@ You can get the category from the [categories API](https://github.com/sdplabs/pr
 Update project
 ----------------
 
-* `PUT /projects/23423233.json` will  update the project from the parameters passed.
+* `PUT /projects/23423233.json` will update the project from the parameters passed.
 
 ```json
 {
