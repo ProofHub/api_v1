@@ -1,12 +1,12 @@
 Time
 ====================
 
-* [Get time entries](https://github.com/sdplabs/proofhub-api/blob/master/sections/timesheets.md#get-timesheet)
+* [Get time](https://github.com/sdplabs/proofhub-api/blob/master/sections/timesheets.md#get-timesheet)
 * [Create time](#create-time)
 * [Update time](#update-time)
 * [Delete time](#delete-time)
 
-Get time entries
+Get time
 ----------------
 
 To get an index of all time entries in a timesheet, see [timesheets](https://github.com/sdplabs/proofhub-api/blob/master/sections/timesheets.md#get-timesheet).
