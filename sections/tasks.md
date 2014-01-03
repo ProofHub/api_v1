@@ -136,7 +136,18 @@ Update task
 {
 	"description":"Get it signed off",
 	"start_date":"2013-12-31",
-	"due_date":"2013-12-31",
+	"due_date":"2013-12-31"
+}
+```
+
+Complete task
+----------------
+
+* `PUT /projects/23423233/todolists/789456/tasks/252563.json` with the following JSON to complete a task. You can pass `false` to incomplete the task.
+
+```json
+{
+	"completed":true
 }
 ```
 
