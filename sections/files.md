@@ -50,14 +50,15 @@ Get files
 Create file
 ----------------
 
-* `POST /projects/23423233/files.json` will create a new entry in the "Files" section for the given project, with the given attachment token. Attaching files requires both the token and the name of the attachment. The token is returned from the Create attachments endpoint, which you must hit first before creating a file. The name parameter must be a valid filename with an extension. 
+* `POST /projects/23423233/files.json` will create a new entry in the "Files" section for the given project, with the given attachment token. Attaching files requires both the token and the name of the attachment. The token is returned from the Create attachments endpoint, which you must hit first before creating a file. The name parameter must be a valid filename with an extension. Multiple attachments are allowed. Set folder to `0` if you don't want to upload file in any folder.
 
 ```json
 {
 	"attachments":[
 		{
-		"token":"alJ0TmxZM1JUU3ViL2wyYUg1SzZ2UT09",
-		"name":"sample_logo.png"
+			"token":"alJ0TmxZM1JUU3ViL2wyYUg1SzZ2UT09",
+			"name":"sample_logo.png",
+			"folder":7292113
 		}
 	]
 }
