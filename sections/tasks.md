@@ -110,7 +110,7 @@ Create task
 **Attaching files**
 
 Attaching files to a task requires both the token and the name of the attachment. The token is obtained from the [Create attachments](
-https://github.com/sdplabs/proofhub-api/blob/master/sections/attachemnts.md#create-attachment) endpoint, which you must hit first before creating an upload. The name parameter must be a valid filename with an extension. Multiple attachments are allowed.
+https://github.com/sdplabs/proofhub-api/blob/master/sections/attachemnts.md#create-attachment) endpoint, which you must hit first before creating an upload. The name parameter must be a valid filename with an extension. Multiple attachments are allowed. Set folder to `0` if you don't want to upload file in any folder.
 
 ```json
 {
@@ -119,8 +119,9 @@ https://github.com/sdplabs/proofhub-api/blob/master/sections/attachemnts.md#crea
 	"due_date":"2013-12-31",
 	"attachments":[
 		{
-		"token":"eUhSL2psVCtWaXU1aG0rOXNCMk1Vdz09",
-		"name":"document.doc"
+			"token":"eUhSL2psVCtWaXU1aG0rOXNCMk1Vdz09",
+			"name":"document.doc",
+			"folder":0
 		}
 	],
 	"assigned":[4634893, 5895623]
