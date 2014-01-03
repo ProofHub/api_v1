@@ -101,7 +101,7 @@ Create topic
 **Attaching files**
 
 Attaching files to a topic requires both the token and the name of the attachment. The token is obtained from the [Create attachments](
-https://github.com/sdplabs/proofhub-api/blob/master/sections/attachemnts.md#create-attachment) endpoint, which you must hit first before creating an upload. The name parameter must be a valid filename with an extension. Multiple attachments are allowed.
+https://github.com/sdplabs/proofhub-api/blob/master/sections/attachemnts.md#create-attachment) endpoint, which you must hit first before creating an upload. The name parameter must be a valid filename with an extension. Multiple attachments are allowed. Set folder to `0` if you don't want to upload file in any folder.
 
 ```json
 {
@@ -110,12 +110,14 @@ https://github.com/sdplabs/proofhub-api/blob/master/sections/attachemnts.md#crea
 	"private":true,
 	"attachments":[
 		{
-		"token":"WSt5b0JZdFZjRjNST1BXblhQRnk5QT09",
-		"name":"sample.jpg"
+			"token":"WSt5b0JZdFZjRjNST1BXblhQRnk5QT09",
+			"name":"sample.jpg",
+			"folder":7292113
 		},
 		{
-		"token":"UVBEbHZkc2puN3h3VHB2cDlZQ3JWdz09",
-		"name":"graphs.png"
+			"token":"UVBEbHZkc2puN3h3VHB2cDlZQ3JWdz09",
+			"name":"graphs.png",
+			"folder":0
 		}
 	],
 	"subscribers":[4634893, 5895623]
