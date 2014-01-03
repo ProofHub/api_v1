@@ -102,7 +102,20 @@ Update milestone
 {
 	"title":"Submit sales report",
 	"due_date":"2014-01-25",
-	"private":true,
+	"private":true
+}
+```
+
+`200 OK` will be returned along with the JSON of the milestone ([Get milestone](#get-milestone)) if the record is updated. `403 Forbidden` will be returned in case of invalid access.
+
+Complete milestone
+----------------
+
+* `PUT /projects/23423233/milestones/789456.json` with the following JSON to complete a milestone. You can pass `false` to incomplete the milestone.
+
+```json
+{
+	"completed":true
 }
 ```
 
