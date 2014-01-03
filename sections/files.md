@@ -3,6 +3,7 @@ Files
 
 * [Get files](#get-files)
 * [Create file](#create-file)
+* [Delete file](#delete-file)
 
 Get files
 ----------------
@@ -46,7 +47,7 @@ Get files
 ]
 ```
 
-Create File
+Create file
 ----------------
 
 * `POST /projects/23423233/files.json` will create a new entry in the "Files" section for the given project, with the given attachment token. Attaching files requires both the token and the name of the attachment. The token is returned from the Create attachments endpoint, which you must hit first before creating a file. The name parameter must be a valid filename with an extension. 
@@ -63,3 +64,10 @@ Create File
 ```
 
 `201 Created` will be returned along with the JSON of the attachment if the record is added. `403 Forbidden` will be returned in case of invalid access.
+
+Delete file
+----------------
+
+* `DELETE /projects/23423233/files/1254836.json` will delete the file specified.
+
+`204 No Content` will be returned if the record is deleted. `403 Forbidden` will be returned in case of invalid access.
