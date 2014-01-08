@@ -64,7 +64,37 @@ Get comments
 	}
 ]
 ```
-To see all comments for a task, you just GET that task using [Task API](https://github.com/sdplabs/proofhub-api/blob/master/sections/tasks.md#get-task) and they're included and look like this:
+
+* `GET /projects/23423233/notes/562300/comments.json` will return comments for the specified note. 
+
+```json
+[
+	{
+		"id":123455,
+		"description":"note comment 1",
+		"parent":0,
+		"created_at":"2013-10-31T06:42:47+00:00",
+		"creator":{
+			"id":5895623,
+			"name":"Stella Altois",
+			"image_url":"https://assets.proofhub.com/thumb/user/index.php?width=80&height=80&cropratio=1:1&image=123456/812b4ba287f5ee0bc9d43bbf5bbe87fb1370073119.jpg"
+		}
+	},
+	{
+		"id":451203,
+		"description":"sub comment 1",
+		"parent":123455,
+		"created_at":"2013-10-31T06:44:22+00:00",
+		"creator":{
+			"id":4634893,
+	        "name":"Chris Wagleys",
+	        "image_url":null
+		}
+	}
+]
+```
+
+* To see all comments for a task, you just GET that task using [Task API](https://github.com/sdplabs/proofhub-api/blob/master/sections/tasks.md#get-task) and they're included and look like this:
 
 ```json
 [
@@ -101,7 +131,15 @@ Create comment
 	"description":"The seminar was very user-friendly. Provided very specific and useful info"
 }
 ```
+For adding the comment to the note section `/projects/23423233/notes/562300/comments.json` use the following JSON and you can get the parent comment from the [GET comments](#get-comments) section. If there is no parent comment for the comment being added then set the parent to `0`.
 
+```json
+{
+	"description":"Here goes the comment...",
+	"parent":"9734481"
+}
+```
+ 
 `201 Created` will be returned along with the JSON of the comment if the record is added. `403 Forbidden` will be returned in case of invalid access.
 
 **Attaching files**
@@ -125,8 +163,7 @@ https://github.com/sdplabs/proofhub-api/blob/master/sections/attachemnts.md#crea
 Update comment
 ----------------
 
-* `PUT /projects/23423233/<section>/123456/comments/895623.json` will update the comment from the parameters passed for the section specified. 
-
+* `PUT /projects/23423233/<section>/123456/comments/895623.json` will update the comment from the parameters passed for the section specified ie. topics or tasks. 
 
 ```json
 {
