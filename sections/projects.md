@@ -73,7 +73,7 @@ Get project
 		"created_at":"2013-12-07T06:35:11+00:00"
 	},
 	"assigned":{
-		"value":"4634893,5895623"
+		"value":"4634893,5895623",
 		"url":"https://api.proofhub.com/v1/projects/23423233/assigned.json"
 	},
 	"files":{
