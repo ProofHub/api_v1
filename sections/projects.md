@@ -98,10 +98,16 @@ Get project
 		"url":"https://api.proofhub.com/v1/projects/23423233/milestones.json"
 	},
 	"notes":{
+		"count":1,
+		"updated_at":"2013-11-08T09:54:22+00:00",
+		"url":"https://api.proofhub.com/v1/projects/23423233/notes.json"
+	},
+	"timesheets":{
 		"count":3,
 		"updated_at":"2013-11-08T09:54:22+00:00",
-		"url":"https://api.proofhub.com/v1/projects/23423233/timesheet.json"
+		"url":"https://api.proofhub.com/v1/projects/23423233/timesheets.json"
 	}
+	
 }
 ```
 Create project
