@@ -89,7 +89,7 @@ Get project
 	"task_lists":{
 		"count":2,
 		"updated_at":"2013-11-08T09:59:26+00:00",
-		"url":"https://api.proofhub.com/v1/projects/23423233/lists.json"
+		"url":"https://api.proofhub.com/v1/projects/23423233/todolists.json"
 	},
 	"milestones":{
 		"completed":1,
