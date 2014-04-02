@@ -21,7 +21,7 @@ Get notes
 		"private":false,
 		"created_at":"2013-11-05T12:05:53+00:00",
 		"updated_at":"2013-11-19T12:22:44+00:00",
-		"url":"https://api.proofhub.com/v1/project/23423233/notes/451200.json"
+		"url":"https://api.proofhub.com/v1/projects/23423233/notes/451200.json"
 	},
 	{
 		"id":562300,
@@ -30,7 +30,7 @@ Get notes
 		"private":true,
 		"created_at":"2013-10-31T06:31:18+00:00",
 		"updated_at":"2013-11-29T07:44:29+00:00",
-		"url":"https://api.proofhub.com/v1/project/23423233/notes/562300.json"
+		"url":"https://api.proofhub.com/v1/projects/23423233/notes/562300.json"
 	}
 ]
 ```
