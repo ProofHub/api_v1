@@ -17,24 +17,30 @@ Get all tasks
 [
 	{
 		"id":"784512",
-		"description":"Update the template document for the training material.",
+		"title":"Update the template document for the training material.",
+		"description":null,
 		"due_date":null,
+		"parent_id":0,
 		"completed":true,
 		"position":3,
 		"updated_at":"2013-12-28T10:50:47+00:00",
 		"created_at":"2013-12-28T10:50:47+00:00",
 		"comments":0,
+		"attachments":1,
 		"url":"https://api.proofhub.com/v1/project/23423233/todolists/748596/tasks/784512.json"
 	},
 	{
 		"id":"124556",
-		"description":"Get the completed document reviewed and approved by each and every person responsible.",
+		"title":"Get the completed document reviewed and approved by each and every person responsible.",
+		"description":"Get the completed document reviewed and approved in detail.",
 		"due_date":null,
+		"parent_id":0,
 		"completed":true,
 		"position":1,
 		"updated_at":"2013-12-25T11:05:22+00:00",
 		"created_at":"2013-12-25T10:55:35+00:00",
 		"comments":1,
+		"attachments":3,
 		"url":"https://api.proofhub.com/v1/project/23423233/todolists/748596/tasks/124556.json"
 	}
 ]
@@ -48,7 +54,9 @@ Get task
 ```json
 {
 	"id":124556,
-	"description":"Get the completed document reviewed and approved by each and every person responsible.",
+	"title":"Get the completed document reviewed and approved by each and every person responsible."
+	"description":"Get the completed document reviewed in detail.",
+	"start_date":null,
 	"due_date":"null",
 	"position":1,
 	"completed":true,
@@ -65,6 +73,20 @@ Get task
         "image_url":null
 	},
 	"assigned":null,
+	"attachments":[
+        {
+            "name":"calculation_ph.xlsx",
+            "byte_size":41,
+            "created_at":"2013-12-21T07:53:00+00:00",
+            "source":"upload",
+            "url":"https://docs.google.com/viewer?embedded=true&url=https%3A%2F%2Fsdp_.proofhub.com%2Fview%2Fdoc%2F%3F2176707%2F43981916%2F812b4ba287f5ee0bc9d43bbf5bbe87fb13876123809z%2F5a3304d7f18ed98cc1443a0a02573186%2Fcalculation_sdplabs%5B20120620%5D.xlsx",
+            "creator":{
+                "id":5895623,
+                "name":"Stella Altois",
+                "image_url":"https://assets.proofhub.com/thumb/user/index.php?width=80&height=80&cropratio=1:1&image=123456/812b4ba287f5ee0bc9d43bbf5bbe87fb1370073119.jpg"
+            }
+        }
+    ],
 	"comments":[
 		{
 	        "id":13995058,
