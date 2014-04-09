@@ -54,6 +54,10 @@ Get note
 		"name":"Stella Altois",
 		"image_url":"https://assets.proofhub.com/thumb/user/index.php?width=80&height=80&cropratio=1:1&image=123456/812b4ba287f5ee0bc9d43bbf5bbe87fb1370073119.jpg"
 	},
+	"comments":{
+		"count":"8",
+		"url":"https://api.proofhub.com/v1/projects/23423233/notes/562300/comments.json"
+	},
 	"collaborators":[
 		{
 			"id":5895623,
