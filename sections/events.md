@@ -84,9 +84,10 @@ Create event
 ----------------
 
 * `POST /project/23423233/events.json` will create a new event from the parameters passed. 
-* The starts_at and ends_at are either dates if the event is an all day affair or times with timezones if they're not.
-* Set the milestone parameter to `true` if you want to set any event as a milestone.
+* The `starts_at` and `ends_at` are either dates if the event is an all day affair or times with timezones if they're not.
+* Set the `milestone` to `true` if you want to set any event as a milestone.
 * The assigned array is an optional list of people IDs that you can get from the [people API](https://github.com/sdplabs/proofhub-api/blob/master/sections/people.md). 
+* Proofhub will send a reminder email to all the assigned users if `reminder` is set. `reminder` is the number of minutes before the event is going to occur and this can't be less than 30 mins.
 
 ```json
 {
@@ -130,6 +131,7 @@ Create event
 	"ends_at":"2014-04-20T16:30:00-05:00",
 	"private":false,
 	"all_day":false,
+	"reminder":30,
 	"assigned":[5895623, 4634893]
 }
 ```
