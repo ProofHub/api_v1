@@ -91,11 +91,10 @@ Get project
 		"updated_at":"2013-11-08T09:59:26+00:00",
 		"url":"https://api.proofhub.com/v1/projects/23423233/todolists.json"
 	},
-	"milestones":{
-		"completed":1,
-		"incomplete":3,
+	"events":{
+		"count":2,
 		"updated_at":"2013-11-28T10:21:02+00:00",
-		"url":"https://api.proofhub.com/v1/projects/23423233/milestones.json"
+		"url":"https://api.proofhub.com/v1/projects/23423233/events.json"
 	},
 	"notes":{
 		"count":1,
