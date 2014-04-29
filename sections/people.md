@@ -24,6 +24,7 @@ Get people
 		},
 		"owner":true,
 		"admin":false,
+		"timezone":"GMT-05:00",
 		"image_url":null,
 		"profile_color":"#FF5500",
 		"created_at":"2013-12-07T06:35:11+00:00",
@@ -40,6 +41,7 @@ Get people
 		},
 		"owner":false,
 		"admin":true,
+		"timezone":"GMT-05:00",
 		"image_url":"https://assets.proofhub.com/thumb/user/index.php?width=80&height=80&cropratio=1:1&image=123456/812b4ba287f5ee0bc9d43bbf5bbe87fb1370073119.jpg",
 		"profile_color":"#812800",
 		"created_at":"2013-11-13T05:15:39+00:00",
@@ -65,6 +67,7 @@ Get person
 	},
 	"owner":false,
 	"admin":true,
+	"timezone":"GMT-05:00",
 	"image_url":"https://assets.proofhub.com/thumb/user/index.php?width=80&height=80&cropratio=1:1&image=123456/812b4ba287f5ee0bc9d43bbf5bbe87fb1370073119.jpg",
 	"profile_color":"#812800",
 	"created_at":"2013-11-13T05:15:39+00:00",
@@ -74,10 +77,10 @@ Get person
 		"updated_at":"2013-12-12T13:15:48+00:00",
 		"url":"https://api.proofhub.com/v1/people/895623/projects.json"
 	},
-	"milestones":{
+	"events":{
 		"count":"1",
 		"updated_at":"2013-12-12T13:15:48+00:00",
-		"url":"https://api.proofhub.com/v1/people/895623/milestones.json"
+		"url":"https://api.proofhub.com/v1/people/895623/events.json"
 	},
 	"tasks":{
 		"count":"2",
