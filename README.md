@@ -23,6 +23,20 @@ API endpoints
 
 * [Projects](https://github.com/sdplabs/proofhub-api/blob/master/sections/projects.md)
 * [People](https://github.com/sdplabs/proofhub-api/blob/master/sections/people.md)
+* [Topics](https://github.com/sdplabs/proofhub-api/blob/master/sections/topics.md)
+* [Comments](https://github.com/sdplabs/proofhub-api/blob/master/sections/comments.md)
+* [Todolists](https://github.com/sdplabs/proofhub-api/blob/master/sections/tododlists.md)
+* [Tasks](https://github.com/sdplabs/proofhub-api/blob/master/sections/tasks.md)
+* [Files](https://github.com/sdplabs/proofhub-api/blob/master/sections/files.md)
+* [Attachments](https://github.com/sdplabs/proofhub-api/blob/master/sections/attachments.md)
+* [Events](https://github.com/sdplabs/proofhub-api/blob/master/sections/events.md)
+* [Milestones](https://github.com/sdplabs/proofhub-api/blob/master/sections/milestones.md)
+* [Timesheets](https://github.com/sdplabs/proofhub-api/blob/master/sections/timesheets.md)
+* [Time](https://github.com/sdplabs/proofhub-api/blob/master/sections/time.md)
+* [Notes](https://github.com/sdplabs/proofhub-api/blob/master/sections/notes.md)
+* [Categories](https://github.com/sdplabs/proofhub-api/blob/master/sections/categories.md)
+* [Folders](https://github.com/sdplabs/proofhub-api/blob/master/sections/folders.md)
+* [Groups](https://github.com/sdplabs/proofhub-api/blob/master/sections/groups.md)
 
 
 Things to remember
