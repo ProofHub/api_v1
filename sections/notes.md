@@ -1,4 +1,4 @@
-Topics
+Notes
 ====================
 
 * [Get notes](#get-notes)
