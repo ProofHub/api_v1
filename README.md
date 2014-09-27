@@ -43,7 +43,7 @@ Things to remember
 ----------------
 * **JSON Format**
 
-  We support JSON for receiving and sending the data. You must include `Content-Type: application/json; charset=utf-8` header with every POST and PUT request. Requests with invalid formats will be returned with `000` response. 
+  We support JSON for receiving and sending the data. You must include `Content-Type: application/json` header with every POST and PUT request. Requests with invalid formats will be returned with `415` response. 
 
 * **Identify your app**
 
