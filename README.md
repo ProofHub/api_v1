@@ -10,12 +10,18 @@ With every request you'll need to pass the ProofHub account's API key. The key c
 
 Making a request
 ----------------
-All URLs (Base url) start with `https://api.proofhub.com/v1/` (No HTTP, only HTTPS). You'll also need to include the `Content-Type` header and `User-Agent` to infentify your app with every request.
+All URLs (Base url) start with `https://api.proofhub.com/v1/` (No HTTP, only HTTPS). You'll also need to include the `User-Agent` header to infentify your app with every request.
 
 **Here is a curl based example:**
 
 ```shell
 curl -H 'X-API-KEY: YOUR API KEY' -H 'User-Agent: AppName (name@example.com)' https://api.proofhub.com/v1/projects.json
+```
+
+To create something, it's the same deal except you also have to include the `Content-Type` header and the JSON data:
+
+```shell
+curl -H 'X-API-KEY: YOUR API KEY' -H 'Content-Type: application/json' -H 'User-Agent: AppName (name@example.com)' -X POST -d '{ "name": "New project!" }' https://api.proofhub.com/v1/projects.json
 ```
 
 API endpoints
