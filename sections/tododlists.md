@@ -45,7 +45,7 @@ Get all todolist
 Get todolist
 ----------------
 
-* `GET /project/23423233/todolists/748596.json` will return the specified todolist.
+* `GET /projects/23423233/todolists/748596.json` will return the specified todolist.
 
 ```json
 {
@@ -75,7 +75,7 @@ Get todolist
 Create todolist
 ----------------
 
-* `POST /project/23423233/todolist.json` will create a new todolist from the parameters passed. 
+* `POST /projects/23423233/todolists.json` will create a new todolist from the parameters passed. 
 * The list type can be `gen` for general list, `bug` for bug list, `chk` for check list and `req` for requirement list.
 * The assigned array is an optional list of people IDs that you can get from the [people API](https://github.com/sdplabs/proofhub-api/blob/master/sections/people.md). 
 
@@ -93,7 +93,7 @@ Create todolist
 Update todolist
 ----------------
 
-* `PUT /projects/23423233/todolist/789456.json` will update the todolist from the parameters passed.
+* `PUT /projects/23423233/todolists/789456.json` will update the todolist from the parameters passed.
 
 ```json
 {
@@ -107,6 +107,6 @@ Update todolist
 Delete todolist
 ----------------
 
-* `DELETE /projects/23423233/todolist/789456.json` will delete the todolist.
+* `DELETE /projects/23423233/todolists/789456.json` will delete the todolist.
 
 `204 No Content` will be returned if the record is deleted. `403 Forbidden` will be returned in case of invalid access.
