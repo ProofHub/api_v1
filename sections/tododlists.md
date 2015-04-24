@@ -15,30 +15,38 @@ Get all todolist
 
 ```json
 [
-	{
-		"id":4512352,
-		"title":"Training material on technology and its use in IT sector",
-		"private":false,
-		"list_type":"General To-Do Lists",
-		"updated_at":"2013-12-27T05:13:32+01:00",
-		"created_at":"2013-12-27T05:13:32+01:00",
-		"completed_count":0,
-		"remaining_count":8,
-		"completed":false,
-		"url":"https://api.proofhub.com/v1/project/23423233/todolists/4512352.json"
-	},
-	{
-		"id":748596,
-		"title":"Training material on marketing",
-		"private":false,
-		"list_type":"General To-Do Lists",
-		"updated_at":"2013-12-22T06:44:36+01:00",
-		"created_at":"2013-12-22T06:44:36+01:00",
-		"completed_count":2,
-		"remaining_count":0,
-		"completed":true,
-		"url":"https://api.proofhub.com/v1/project/23423233/todolists/748596.json"
-	}
+    {
+        "id":4512352,
+        "title":"Training material on technology and its use in IT sector",
+        "list_type":"General To-Do Lists",
+        "private":false,
+        "archived":false,
+        "assigned":null,
+        "time_tracking":false,
+        "show_in_gantt":true,        
+        "completed":false,
+        "completed_count":0,
+        "remaining_count":8,
+        "updated_at":"2013-12-27T05:13:32+01:00",
+        "created_at":"2013-12-27T05:13:32+01:00",
+        "url":"https://api.proofhub.com/v1/project/23423233/todolists/4512352.json"
+    },
+    {
+        "id":748596,
+        "title":"Training material on marketing",
+        "list_type":"General To-Do Lists",
+        "private":false,
+        "archived":false,
+        "assigned":"5895623",
+        "time_tracking":false,
+        "show_in_gantt":false,    
+        "completed":true,
+        "completed_count":2,
+        "remaining_count":0,
+        "updated_at":"2013-12-22T06:44:36+01:00",
+        "created_at":"2013-12-22T06:44:36+01:00",
+        "url":"https://api.proofhub.com/v1/project/23423233/todolists/748596.json"
+    }
 ]
 ```
 
@@ -49,26 +57,29 @@ Get todolist
 
 ```json
 {
-	"id":160917096,
-	"title":"Sample list",
-	"private":false,
-	"list_type":"General To-Do Lists",
-	"updated_at":"2013-12-22T06:44:36+01:00",
-	"created_at":"2013-12-22T06:44:36+01:00",
-	"completed_count":2,
-	"remaining_count":0,
-	"completed":true,
-	"creator":{
-		"id":5895623,
-		"name":"Stella Altois",
-		"image_url":"https://assets.proofhub.com/thumb/user/index.php?width=80&height=80&cropratio=1:1&image=123456/812b4ba287f5ee0bc9d43bbf5bbe87fb1370073119.jpg"
-	},
-	"assigned":[
-		{
-			"id":5895623,
-			"name":"Stella Altois"
-		}
-	]
+    "id":748596,
+    "title":"Training material on marketing",
+    "private":false,
+    "archived":false,
+    "list_type":"General To-Do Lists",
+    "completed_count":2,
+    "remaining_count":0,
+    "completed":true,
+    "time_tracking":false,
+    "show_in_gantt":false,
+    "creator":{
+        "id":5895623,
+        "name":"Stella Altois",
+        "image_url":"https://assets.proofhub.com/thumb/user/index.php?width=80&height=80&cropratio=1:1&image=123456/812b4ba287f5ee0bc9d43bbf5bbe87fb1370073119.jpg"
+    },
+    "assigned":[
+        {
+            "id":5895623,
+            "name":"Stella Altois"
+        }
+    ],
+    "updated_at":"2013-12-22T06:44:36+01:00",
+    "created_at":"2013-12-22T06:44:36+01:00"
 }
 ```
 
@@ -81,10 +92,12 @@ Create todolist
 
 ```json
 {
-	"title":"Proposal for campaign",
-	"list_type":"gen",
-	"private":true,
-	"assigned":[4634893, 5895623]
+    "title":"Proposal for campaign",
+    "list_type":"gen",
+    "private":true,
+    "show_in_gantt":true,
+    "time_tracking":false,
+    "assigned":[4634893, 5895623]
 }
 ```
 
