@@ -15,34 +15,50 @@ Get all tasks
 
 ```json
 [
-	{
-		"id":"784512",
-		"title":"Update the template document for the training material.",
-		"description":null,
-		"due_date":null,
-		"parent_id":0,
-		"completed":true,
-		"position":3,
-		"updated_at":"2013-12-28T10:50:47+00:00",
-		"created_at":"2013-12-28T10:50:47+00:00",
-		"comments":0,
-		"attachments":1,
-		"url":"https://api.proofhub.com/v1/project/23423233/todolists/748596/tasks/784512.json"
-	},
-	{
-		"id":"124556",
-		"title":"Get the completed document reviewed and approved by each and every person responsible.",
-		"description":"Get the completed document reviewed and approved in detail.",
-		"due_date":null,
-		"parent_id":0,
-		"completed":true,
-		"position":1,
-		"updated_at":"2013-12-25T11:05:22+00:00",
-		"created_at":"2013-12-25T10:55:35+00:00",
-		"comments":1,
-		"attachments":3,
-		"url":"https://api.proofhub.com/v1/project/23423233/todolists/748596/tasks/124556.json"
-	}
+    {
+        "id":"784512",
+        "title":"Update the template document for the training material.",
+        "description":null,
+        "start_date":null,
+        "due_date":null,
+        "parent_id":0,
+        "completed":true,
+        "position":3,
+        "assigned":null,
+        "estimated_hrs":0,
+        "total_hours":0,
+        "labels":[
+            {
+                "id":46568,
+                "name":"In-progress",
+                "color":"#999999"
+            }
+        ],
+        "updated_at":"2013-12-28T10:50:47+00:00",
+        "created_at":"2013-12-28T10:50:47+00:00",
+        "comments":0,
+        "attachments":1,
+        "url":"https://api.proofhub.com/v1/project/23423233/todolists/748596/tasks/784512.json"
+    },
+    {
+        "id":"124556",
+        "title":"Get the completed document reviewed and approved by each and every person responsible.",
+        "description":"Get the completed document reviewed and approved in detail.",
+        "start_date":"2013-12-26",
+        "due_date":null,
+        "parent_id":0,
+        "completed":true,
+        "position":1,
+        "assigned":"5895623",
+        "estimated_hrs":"2.5",
+        "total_hours":"3",
+        "labels":null,
+        "updated_at":"2013-12-25T11:05:22+00:00",
+        "created_at":"2013-12-25T10:55:35+00:00",
+        "comments":1,
+        "attachments":3,
+        "url":"https://api.proofhub.com/v1/project/23423233/todolists/748596/tasks/124556.json"
+    }
 ]
 ```
 
@@ -53,27 +69,34 @@ Get task
 
 ```json
 {
-	"id":124556,
-	"title":"Get the completed document reviewed and approved by each and every person responsible."
-	"description":"Get the completed document reviewed in detail.",
-	"start_date":null,
-	"due_date":"null",
-	"position":1,
-	"completed":true,
-	"updated_at":"2013-12-25T11:05:22+00:00",
-	"created_at":"2013-12-25T10:55:35+00:00",
-	"creator":{
+    "id":124556,
+    "title":"Get the completed document reviewed and approved by each and every person responsible."
+    "description":"Get the completed document reviewed in detail.",
+    "start_date":"2013-12-26",
+    "due_date":"null",
+    "position":1,
+    "completed":true,
+    "labels":null,
+    "estimated_hrs":"2.5",
+    "updated_at":"2013-12-25T11:05:22+00:00",
+    "created_at":"2013-12-25T10:55:35+00:00",
+    "creator":{
         "id":5895623,
         "name":"Stella Altois",
         "image_url":"https://assets.proofhub.com/thumb/user/index.php?width=80&height=80&cropratio=1:1&image=123456/812b4ba287f5ee0bc9d43bbf5bbe87fb1370073119.jpg"
     },
-	"completor":{
-		"id":4634893,
+    "completor":{
+        "id":4634893,
         "name":"Chris Wagleys",
         "image_url":null
-	},
-	"assigned":null,
-	"attachments":[
+    },
+    "assigned":[ 
+        {
+            "id":4634893,
+            "name":"Chris Wagleys"
+        }
+    ],
+    "attachments":[
         {
             "name":"calculation_ph.xlsx",
             "byte_size":41,
@@ -87,28 +110,28 @@ Get task
             }
         }
     ],
-	"comments":[
-		{
-	        "id":13995058,
-	        "content":"Meeting with the client",
-	        "created_at":"2013-12-31T11:05:22+00:00",
-	        "creator":{
-	            "id":4634893,
-	            "name":"Chris Wagley",
-	            "image_url":null
-	        },
-	    },
-	    {
-	        "id":14008626,
-	        "content":"Meeting postponed",
-	        "created_at":"2013-12-31T11:30:22+00:00",
-	        "creator":{
-	            "id":4634893,
-	            "name":"Chris Wagley",
-	            "image_url":null
-	        },
-	    }
-	]
+    "comments":[
+        {
+            "id":13995058,
+            "content":"Meeting with the client",
+            "created_at":"2013-12-31T11:05:22+00:00",
+            "creator":{
+                "id":4634893,
+                "name":"Chris Wagley",
+                "image_url":null
+            },
+        },
+        {
+            "id":14008626,
+            "content":"Meeting postponed",
+            "created_at":"2013-12-31T11:30:22+00:00",
+            "creator":{
+                "id":4634893,
+                "name":"Chris Wagley",
+                "image_url":null
+            },
+        }
+    ]
 }
 ```
 
@@ -120,10 +143,13 @@ Create task
 
 ```json
 {
-	"description":"Get it signed",
+	"title":"Get it signed",
+    "description":"Need to get it signed off immediately",
 	"start_date":"2013-12-25",
 	"due_date":"2013-12-30",
-	"assigned":[4634893, 5895623]
+	"estimated_hrs":"2",
+	"assigned":[4634893, 5895623],
+	"labels":[4512200, 45788952]
 }
 ```
 
@@ -136,9 +162,11 @@ https://github.com/sdplabs/proofhub-api/blob/master/sections/attachemnts.md#crea
 
 ```json
 {
-	"description":"Get it signed",
+	"title":"Get it signed",
+    "description":"Need to get it signed off immediately",
 	"start_date":"2013-12-31",
 	"due_date":"2013-12-31",
+	"estimated_hrs":"2",
 	"attachments":[
 		{
 			"token":"eUhSL2psVCtWaXU1aG0rOXNCMk1Vdz09",
@@ -146,7 +174,8 @@ https://github.com/sdplabs/proofhub-api/blob/master/sections/attachemnts.md#crea
 			"folder":0
 		}
 	],
-	"assigned":[4634893, 5895623]
+	"assigned":[4634893, 5895623],
+	"labels":[4512200, 45788952]
 }
 ```
 
