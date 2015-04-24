@@ -19,34 +19,38 @@ Get all projects
 
 ```json
 [
-	{
-		"id":23423233,
-		"title":"PH Marketing",
-		"description":"Project description goes here",
-		"category":{
-			"id":147852,
-			"name":"Marketing Projects"
-		},
-		"start_date":null,
-		"end_date":null,
-		"updated_at":"2013-11-13T05:15:39+00:00",
-		"archived":false,
-		"url":"https://api.proofhub.com/v1/project/123456.json"
-	},
-	{
-		"id":54634432,
-		"title":"Rockwall Phase II",
-		"description":"Develop and execute the 2014 plan",
-		"category":{
-			"id":852369,
-			"name":"Uncategorized"
-		},
-		"start_date":"2013-10-28",
-		"end_date":"2013-10-31",
-		"updated_at":"2013-12-07T06:35:11+00:00",
-		"archived":false,
-		"url":"https://api.proofhub.com/v1/project/456789.json"
-	}
+    {
+        "id":23423233,
+        "title":"PH Marketing",
+        "description":"Project description goes here",
+        "category":{
+            "id":147852,
+            "name":"Marketing Projects"
+        },
+        "color":"#41236D",
+        "start_date":null,
+        "end_date":null,
+        "archived":false,
+        "assigned":"5895623,4634893",
+        "updated_at":"2013-11-13T05:15:39+00:00",
+        "url":"https://api.proofhub.com/v1/project/123456.json"
+    },
+    {
+        "id":54634432,
+        "title":"Rockwall Phase II",
+        "description":"Develop and execute the 2014 plan",
+        "category":{
+            "id":852369,
+            "name":"Uncategorized"
+        },
+        "color":"#A46A21",
+        "start_date":"2013-10-28",
+        "end_date":"2013-10-31",
+        "archived":false,
+        "assigned":"5895623,4634893",
+        "updated_at":"2013-12-07T06:35:11+00:00",        
+        "url":"https://api.proofhub.com/v1/project/456789.json"
+    }
 ]
 ```
 
@@ -57,56 +61,57 @@ Get project
 
 ```json
 {
-	"id":23423233,
-	"title":"PH Marketing",
-	"description":"Project description goes here",
-	"archived":false,
-	"category":{
-		"id":147852,
-		"name":"Marketing Projects"
-	},
-	"updated_at":"2013-12-07T06:35:11+00:00",
-	"creator":{
-		"id":5895623,
-		"name":"Stella Altois",
-		"image_url":"https://assets.proofhub.com/thumb/user/index.php?width=80&height=80&cropratio=1:1&image=123456/812b4ba287f5ee0bc9d43bbf5bbe87fb1370073119.jpg",
-		"created_at":"2013-12-07T06:35:11+00:00"
-	},
-	"assigned":{
-		"value":"4634893,5895623",
-		"url":"https://api.proofhub.com/v1/projects/23423233/assigned.json"
-	},
-	"files":{
-		"count":12,
-		"updated_at":"2013-11-19T06:26:04+00:00",
-		"url":"https://api.proofhub.com/v1/projects/23423233/files.json"
-	},
-	"topics":{
-		"count":8,
-		"updated_at":"2013-12-07T06:34:47+00:00",
-		"url":"https://api.proofhub.com/v1/projects/23423233/topics.json"
-	},
-	"task_lists":{
-		"count":2,
-		"updated_at":"2013-11-08T09:59:26+00:00",
-		"url":"https://api.proofhub.com/v1/projects/23423233/todolists.json"
-	},
-	"events":{
-		"count":2,
-		"updated_at":"2013-11-28T10:21:02+00:00",
-		"url":"https://api.proofhub.com/v1/projects/23423233/events.json"
-	},
-	"notes":{
-		"count":1,
-		"updated_at":"2013-11-08T09:54:22+00:00",
-		"url":"https://api.proofhub.com/v1/projects/23423233/notes.json"
-	},
-	"timesheets":{
-		"count":3,
-		"updated_at":"2013-11-08T09:54:22+00:00",
-		"url":"https://api.proofhub.com/v1/projects/23423233/timesheets.json"
-	}
-	
+    "id":23423233,
+    "title":"PH Marketing",
+    "description":"Project description goes here",
+    "archived":false,
+    "color":"#41236D",
+    "category":{
+        "id":147852,
+        "name":"Marketing Projects"
+    },
+    "updated_at":"2013-12-07T06:35:11+00:00",
+    "creator":{
+        "id":5895623,
+        "name":"Stella Altois",
+        "image_url":"https://assets.proofhub.com/thumb/user/index.php?width=80&height=80&cropratio=1:1&image=123456/812b4ba287f5ee0bc9d43bbf5bbe87fb1370073119.jpg",
+        "created_at":"2013-12-07T06:35:11+00:00"
+    },
+    "assigned":{
+        "value":"4634893,5895623",
+        "url":"https://api.proofhub.com/v1/projects/23423233/assigned.json"
+    },
+    "files":{
+        "count":12,
+        "updated_at":"2013-11-19T06:26:04+00:00",
+        "url":"https://api.proofhub.com/v1/projects/23423233/files.json"
+    },
+    "topics":{
+        "count":8,
+        "updated_at":"2013-12-07T06:34:47+00:00",
+        "url":"https://api.proofhub.com/v1/projects/23423233/topics.json"
+    },
+    "task_lists":{
+        "count":2,
+        "updated_at":"2013-11-08T09:59:26+00:00",
+        "url":"https://api.proofhub.com/v1/projects/23423233/todolists.json"
+    },
+    "events":{
+        "count":2,
+        "updated_at":"2013-11-28T10:21:02+00:00",
+        "url":"https://api.proofhub.com/v1/projects/23423233/events.json"
+    },
+    "notes":{
+        "count":1,
+        "updated_at":"2013-11-08T09:54:22+00:00",
+        "url":"https://api.proofhub.com/v1/projects/23423233/notes.json"
+    },
+    "timesheets":{
+        "count":3,
+        "updated_at":"2013-11-08T09:54:22+00:00",
+        "url":"https://api.proofhub.com/v1/projects/23423233/timesheets.json"
+    }
+
 }
 ```
 Create project
