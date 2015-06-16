@@ -54,7 +54,8 @@ Get people
 Get person
 ----------------
 
-* `GET /people/5895623.json` will return the person.
+* `GET /people/me.json` will return the current person.
+* `GET /people/5895623.json` will return the specified person.
 
 ```json
 {
