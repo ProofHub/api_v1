@@ -29,7 +29,7 @@ Get timesheets
             "name":"Stella Altois",
             "image_url":"https://assets.proofhub.com/thumb/user/index.php?width=80&height=80&cropratio=1:1&image=123456/812b4ba287f5ee0bc9d43bbf5bbe87fb1370073119.jpg"
         },
-        "url":"https://api.proofhub.com/v1/project/23423233/timesheets\/9658223.json"
+        "url":"https://api.proofhub.com/v1/projects/23423233/timesheets\/9658223.json"
     },
     {
         "id":451200,
@@ -46,7 +46,7 @@ Get timesheets
             "name":"Chris Wagley",
             "image_url":null
         },
-        "url":"https://api.proofhub.com/v1/project/23423233/timesheets\/451200.json"
+        "url":"https://api.proofhub.com/v1/projects/23423233/timesheets\/451200.json"
     }
 ]
 ```
