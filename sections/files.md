@@ -41,7 +41,7 @@ Get files
 		"attachable":{
 			"id":852369,
 			"type":"Comment",
-			"url":"https://api.proofhub.com/v1/project/23423233/topics/123456/comments/852369.json"
+			"url":"https://api.proofhub.com/v1/projects/23423233/topics/123456/comments/852369.json"
 		}
 	}
 ]
