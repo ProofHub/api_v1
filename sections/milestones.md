@@ -24,7 +24,7 @@ Get all milestones
 		"completed":true,
 		"updated_at":"2013-11-28T10:21:02+00:00",
 		"created_at":"2013-11-28T10:21:02+00:00",
-		"url":"https://api.proofhub.com/v1/project/23423233/milestones/123456.json"
+		"url":"https://api.proofhub.com/v1/projects/23423233/milestones/123456.json"
 	},
 	{
 		"id":963258,
@@ -34,7 +34,7 @@ Get all milestones
 		"completed":false,
 		"updated_at":"2013-12-29T16:06:53+00:00",
 		"created_at":"2013-12-29T16:06:53+00:00",
-		"url":"https://api.proofhub.com/v1/project/23423233/milestones/963258.json"
+		"url":"https://api.proofhub.com/v1/projects/23423233/milestones/963258.json"
 	}
 ]
 ```
@@ -42,7 +42,7 @@ Get all milestones
 Get milestone
 ----------------
 
-* `GET /project/23423233/milestones/963258.json` will return the specified milestone.
+* `GET /projects/23423233/milestones/963258.json` will return the specified milestone.
 
 ```json
 {
@@ -79,7 +79,7 @@ Get milestone
 Create Milestone
 ----------------
 
-* `POST /project/23423233/milestones.json` will create a new milestone from the parameters passed. 
+* `POST /projects/23423233/milestones.json` will create a new milestone from the parameters passed. 
 * The subscribers array is an optional list of people IDs that you can get from the [people API](https://github.com/sdplabs/proofhub-api/blob/master/sections/people.md). 
 
 ```json
