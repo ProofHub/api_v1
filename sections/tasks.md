@@ -38,7 +38,7 @@ Get all tasks
         "created_at":"2013-12-28T10:50:47+00:00",
         "comments":0,
         "attachments":1,
-        "url":"https://api.proofhub.com/v1/project/23423233/todolists/748596/tasks/784512.json"
+        "url":"https://api.proofhub.com/v1/projects/23423233/todolists/748596/tasks/784512.json"
     },
     {
         "id":"124556",
@@ -57,7 +57,7 @@ Get all tasks
         "created_at":"2013-12-25T10:55:35+00:00",
         "comments":1,
         "attachments":3,
-        "url":"https://api.proofhub.com/v1/project/23423233/todolists/748596/tasks/124556.json"
+        "url":"https://api.proofhub.com/v1/projects/23423233/todolists/748596/tasks/124556.json"
     }
 ]
 ```
@@ -65,7 +65,7 @@ Get all tasks
 Get task
 ----------------
 
-* `GET /project/23423233/todolists/748596/tasks/124556.json` will return the specified task.
+* `GET /projects/23423233/todolists/748596/tasks/124556.json` will return the specified task.
 
 ```json
 {
@@ -138,7 +138,7 @@ Get task
 Create task
 ----------------
 
-* `POST /project/23423233/todolists/748596/tasks.json` will create a new task from the parameters passed. 
+* `POST /projects/23423233/todolists/748596/tasks.json` will create a new task from the parameters passed. 
 * The assigned array is an optional list of people IDs that you can get from the [people API](https://github.com/sdplabs/proofhub-api/blob/master/sections/people.md). 
 
 ```json
