@@ -33,7 +33,7 @@ Get all projects
         "archived":false,
         "assigned":"5895623,4634893",
         "updated_at":"2013-11-13T05:15:39+00:00",
-        "url":"https://api.proofhub.com/v1/project/123456.json"
+        "url":"https://api.proofhub.com/v1/projects/123456.json"
     },
     {
         "id":54634432,
@@ -49,7 +49,7 @@ Get all projects
         "archived":false,
         "assigned":"5895623,4634893",
         "updated_at":"2013-12-07T06:35:11+00:00",        
-        "url":"https://api.proofhub.com/v1/project/456789.json"
+        "url":"https://api.proofhub.com/v1/projects/456789.json"
     }
 ]
 ```
