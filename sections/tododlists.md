@@ -29,7 +29,7 @@ Get all todolist
         "remaining_count":8,
         "updated_at":"2013-12-27T05:13:32+01:00",
         "created_at":"2013-12-27T05:13:32+01:00",
-        "url":"https://api.proofhub.com/v1/project/23423233/todolists/4512352.json"
+        "url":"https://api.proofhub.com/v1/projects/23423233/todolists/4512352.json"
     },
     {
         "id":748596,
@@ -45,7 +45,7 @@ Get all todolist
         "remaining_count":0,
         "updated_at":"2013-12-22T06:44:36+01:00",
         "created_at":"2013-12-22T06:44:36+01:00",
-        "url":"https://api.proofhub.com/v1/project/23423233/todolists/748596.json"
+        "url":"https://api.proofhub.com/v1/projects/23423233/todolists/748596.json"
     }
 ]
 ```
