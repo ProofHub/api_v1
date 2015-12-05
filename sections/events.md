@@ -27,7 +27,7 @@ Get all events
 		"private":true,
 		"updated_at":"2014-04-08T06:01:39+00:00",
 		"created_at":"2014-04-08T06:01:39+00:00",
-		"url":"https://api.proofhub.com/v1/project/23423233/events/123456.json"
+		"url":"https://api.proofhub.com/v1/projects/23423233/events/123456.json"
 	},
 	{
 		"id":963258,
@@ -40,7 +40,7 @@ Get all events
 		"private":true,
 		"updated_at":"2014-04-11T09:18:26+00:00",
 		"created_at":"2014-04-11T09:18:26+00:00",
-		"url":"https://api.proofhub.com/v1/project/23423233/events/963258.json"
+		"url":"https://api.proofhub.com/v1/projects/23423233/events/963258.json"
 	}
 ]
 ```
@@ -48,7 +48,7 @@ Get all events
 Get event
 ----------------
 
-* `GET /project/23423233/events/123456.json` will return the specified event.
+* `GET /projects/23423233/events/123456.json` will return the specified event.
 
 ```json
 {
@@ -83,7 +83,7 @@ Get event
 Create event
 ----------------
 
-* `POST /project/23423233/events.json` will create a new event from the parameters passed. 
+* `POST /projects/23423233/events.json` will create a new event from the parameters passed. 
 * The `starts_at` and `ends_at` are either dates if the event is an all day affair or times with timezones if they're not.
 * Set the `milestone` to `true` if you want to set any event as a milestone.
 * The assigned array is an optional list of people IDs that you can get from the [people API](https://github.com/sdplabs/proofhub-api/blob/master/sections/people.md). 
